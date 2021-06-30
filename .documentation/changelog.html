@@ -1,0 +1,2868 @@
+<!DOCTYPE html><html><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikitude SDK Unity 9.8.0 Documentation </title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    
+    <link type="text/css" rel="stylesheet" href="css/merged.min.css">
+    
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/highlight-9.15.6.min.js"></script>
+    <script type="text/javascript" src="js/lunr.min-0.7.2.js"></script>
+    <script type="text/javascript" src="js/lightbox.min-0.5.1.js"></script>
+    <script type="text/javascript" src="js/jquery.easytree.js"></script>
+ 
+    <script type="text/plain" data-cookieconsent="statistics">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-11754809-8', 'auto');
+		ga('set', 'checkProtocolTask', null);
+		ga('send', 'pageview');
+    </script>   
+
+</head>
+<body>
+    <div id="page">
+        <a name="top"></a>
+        <header>
+            <h1><a href="">Documentation</a></h1>
+        </header>
+        <nav id="page-tabs">
+            <div class="nav-link">
+                <a href="https://support.wikitude.com/support/home" class="">Forum</a>
+                <a href="https://support.wikitude.com/support/solutions" class="">FAQ</a>
+                <a href="https://www.wikitude.com/documentation" class="active">Documentation</a>
+                <a href="https://www.wikitude.com/download">Download</a>
+            </div>
+            <div class="nav-url">
+                <a href="https://www.wikitude.com/">www.wikitude.com</a>
+            </div>
+        </nav>
+         
+
+<div id="sidebar">
+
+    <div id="sidebarHeader">
+
+        
+        <select id="documentationSelect">
+            
+                <option value=""> --- Android --- </option>
+            
+                <option value="android"> Android Javascript API </option>
+            
+                <option value="androidnative"> Android Native API </option>
+            
+                <option value=""> --- iOS --- </option>
+            
+                <option value="ios"> iOS Javascript API </option>
+            
+                <option value="iosnative"> iOS Native API </option>
+            
+                <option value=""> --- Windows --- </option>
+            
+                <option value="uwpnative"> UWP Native API </option>
+            
+                <option value=""> --- Unity --- </option>
+            
+                <option value="unity" selected=""> Unity </option>
+            
+                <option value="hololens"> HoloLens Unity </option>
+            
+                <option value=""> --- Extensions --- </option>
+            
+                <option value="flutter"> Flutter </option>
+            
+                <option value="phonegap"> Cordova </option>
+            
+                <option value="xamarin"> Xamarin </option>
+            
+                <option value=""> --- Smart Glasses --- </option>
+            
+                <option value="epson"> Epson </option>
+            
+                <option value="vuzix"> Vuzix </option>
+            
+                <option value=""> --- Services --- </option>
+            
+            
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio/"> Studio User Manual </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/documentation/studio-api/index.html"> Studio API </option>
+             
+            <option value="external:"> --- Expert Edition --- </option>
+             
+            <option value="external:https://www.wikitude.com/external/doc/expertedition/"> Expert Edition Unity </option>
+             
+        </select>
+
+        
+
+        <h2>Wikitude SDK Unity</h2>
+        <div>Professional Edition</div>
+        
+        <div id="version">version: 9.8.0</div>
+        
+        
+        <div id="api-type">Unity</div>
+        
+
+    </div>
+
+    <input id="showNav" class="toggleNav" type="checkbox">
+    <label class="showNavLbl" for="showNav">Show Navigation</label>
+    <label class="hideNavLbl" for="showNav">Hide Navigation</label>
+
+    <div id="mainnav">
+        <form action="search.html"><input id="search" type="text" placeholder="Search documentation" name="q"></form>
+        <nav id="toc">
+            
+    <ul>
+    
+        <li>
+            <a href="gettingstartedunity.html#getting-started">Getting started</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedunity.html#introduction-to-the-wikitude-sdk">Introduction to the Wikitude SDK</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="gettingstartedunity.html#recommended-usage-of-this-documentation">Recommended Usage of this Documentation</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedunity.html#the-wikitude-native-sdk-augmented-reality-for-your-own-app">The Wikitude Native SDK - Augmented Reality for your own app</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedunity.html#architecture-of-the-wikitude-sdk">Architecture of the Wikitude SDK</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedunity.html#the-wikitude-developer-portal">The Wikitude Developer Portal</a>
+            
+        </li>
+    
+        <li>
+            <a href="gettingstartedunity.html#feedback-and-contact">Feedback and Contact</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="setupguideunity.html#setup-guide-unity-plugin">Setup Guide Unity Plugin</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="setupguideunity.html#open-the-sample-project">Open the Sample Project</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideunity.html#import-the-wikitudeunitypackage">Import the Wikitude.unitypackage</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideunity.html#use-the-wikitude-unity-plugin">Use the Wikitude Unity plugin</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideunity.html#export-and-xcode-build-settings-changes">Export and Xcode Build Settings Changes</a>
+            
+        </li>
+    
+        <li>
+            <a href="setupguideunity.html#unity-requirements-and-supported-versions">Unity Requirements and supported versions</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="supporteddevicesunity.html#supported-devices">Supported Devices</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#license-key">License Key</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="triallicense.html#how-to-obtain-a-free-trial-license">How to obtain a free trial license</a>
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#where-should-i-enter-the-license-key">Where should I enter the license key</a>
+            
+        </li>
+    
+        <li>
+            <a href="triallicense.html#unity-plugin">Unity Plugin</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="ios-framework-scripts-native.html#ios-app-store-submissions">iOS App Store submissions</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="ios-framework-scripts-native.html#removing-simulator-architectures">Removing simulator architectures</a>
+            
+        </li>
+    
+        <li>
+            <a href="ios-framework-scripts-native.html#bitcode">Bitcode</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="unitylivepreview.html#unity-editor-live-preview">Unity Editor Live Preview</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="sampleunity.html#examples-tutorials">Examples &amp; Tutorials</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="sampleunity.html#structure">Structure</a>
+            
+        </li>
+    
+        <li>
+            <a href="sampleunity.html#usage">Usage</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetimages.html#target-images">Target Images</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetimages.html#image-recognition-samples">Image recognition samples</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetimages.html#object-recognition-samples">Object recognition samples</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#image-recognition">Image Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="imagerecognitionnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-recognition-range">Extended Recognition Range</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#simple-image-recognition-in-unity">Simple Image Recognition in Unity</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="imagerecognitionnative.html#wikitudecamera-prefab">WikitudeCamera Prefab</a>
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#imagetracker-prefab">ImageTracker Prefab</a>
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#define-custom-augmentations">Define custom augmentations</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#multiple-targets">Multiple Targets</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#extended-tracking">Extended Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#runtime-tracker">Runtime Tracker</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="imagerecognitionnative.html#multiple-trackers">Multiple Trackers</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-tracking">Instant Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="instanttrackingnative.html#smart-seamless-ar-tracking">SMART - Seamless AR Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#basic-instant-tracking">Basic Instant Tracking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#instant-scene-picking">Instant Scene Picking</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#persistent-instant-targets">Persistent Instant Targets</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="instanttrackingnative.html#plane-detection-experimental">Plane Detection - Experimental</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#object-tracking">Object Tracking</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#introduction-to-object-and-scene-recognition">Introduction to Object and Scene Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#scene-recognition">Scene Recognition</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#object-tracking-in-unity">Object Tracking in Unity</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#objecttracker-prefab">ObjectTracker Prefab</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#define-custom-augmentations">Define custom augmentations</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#extended-tracking-for-objects">Extended Tracking for Objects</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#alignment-initialization">Alignment initialization</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttrackingnative.html#scene-setup">Scene Setup</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#silhouette-rendering">Silhouette Rendering</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttrackingnative.html#silhouette-alignment">Silhouette Alignment</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition">Cloud Recognition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition-sample">Cloud Recognition Sample</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cloudrecognitionnative.html#cloud-recognition-in-unity">Cloud recognition in Unity</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="occludersunity.html#rendering">Rendering</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="occludersunity.html#occluders-in-unity">Occluders in Unity</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="cameracontrolunity.html#camera-controls">Camera Controls</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="cameracontrolunity.html#inspector-settings">Inspector Settings</a>
+            
+        </li>
+    
+        <li>
+            <a href="cameracontrolunity.html#script-only-settings">Script Only Settings</a>
+            
+        </li>
+    
+        <li>
+            <a href="cameracontrolunity.html#focus-at-point-of-interest">Focus at point of interest</a>
+            
+        </li>
+    
+        <li>
+            <a href="cameracontrolunity.html#expose-at-point-of-interest">Expose at point of interest</a>
+            
+        </li>
+    
+        <li>
+            <a href="cameracontrolunity.html#external-camera-support">External camera support</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapiunity.html#plugins-api">Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="pluginsapiunity.html#unity-interface">Unity interface</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="pluginsapiunity.html#sample-explanation">Sample explanation</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="inputpluginsapiunity.html#input-plugins-api">Input Plugins API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="inputpluginsapiunity.html#unity-interface">Unity interface</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#target-management">Target Management</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets">Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#wikitude-studio">Wikitude Studio</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#use-projects-wtc-file-in-your-app">Use project's WTC file in your app</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#image-targets-for-cloud-recognition">Image Targets for Cloud Recognition</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#physical-height-for-image-targets">Physical Height for Image Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetmanagement.html#object-targets">Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetmanagement.html#image-based-conversion">Image-based conversion</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="unitywtceditor.html#unity-wtc-editor">Unity WTC Editor</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="unitywtceditor.html#overview-of-wtc-editor">Overview of WTC Editor</a>
+            
+        </li>
+    
+        <li>
+            <a href="unitywtceditor.html#create-target-collection-in-wtc-editor">Create target collection in WTC Editor</a>
+            
+        </li>
+    
+        <li>
+            <a href="unitywtceditor.html#edit-target-collection">Edit target collection</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#best-practice-for-image-targets">Best practice for Image Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetguide.html#summary">Summary</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#optimal-image-dimensions">Optimal Image Dimensions</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#low-contrast-images">Low contrast images</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#distribution-of-textured-areas">Distribution of textured areas</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-whitespace">Images with whitespace</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#vector-based-graphics">Vector-based graphics</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#images-with-a-lot-of-text">Images with a lot of text</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetguide.html#repetitive-patterns">Repetitive patterns</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#best-practice-for-object-targets">Best practice for Object Targets</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="objecttargetguide.html#characteristics-of-easily-trackable-objects">Characteristics of easily trackable objects</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#general-pieces-of-advice">General pieces of advice</a>
+            
+        </li>
+    
+        <li>
+            <a href="objecttargetguide.html#image-based-conversion-best-practice">Image-based conversion - Best practice</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#targets-versioning">Targets Versioning</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="targetversioning.html#image-targets">Image Targets</a>
+            
+        </li>
+    
+        <li>
+            <a href="targetversioning.html#object-targets">Object Targets</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="studio-api.html#introduction">Introduction</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="studio-api.html#studio-api-reference">Studio API Reference</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#api-reference">API Reference</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="reference.html#unity-plugin-reference">Unity Plugin Reference</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="reference.html#studio-api">Studio API</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migration-notes">Migration Notes</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="migration-unity.html#migrate-to-98">Migrate to 9.8</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-to-94">Migrate to 9.4</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-to-93">Migrate to 9.3</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-891-to-810">Migrate from 8.9.1 to 8.10</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-870-to-890">Migrate from 8.7.0 to 8.9.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-830-to-840">Migrate from 8.3.0 to 8.4.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-820-to-830">Migrate from 8.2.0 to 8.3.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-800-to-810">Migrate from 8.0.0 to 8.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-720-to-800">Migrate from 7.2.0 to 8.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-710-to-720">Migrate from 7.1.0 to 7.2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-700-to-710">Migrate from 7.0.0 to 7.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-210-to-700">Migrate from 2.1.0 to 7.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-200-to-210">Migrate from 2.0.0 to 2.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-140-to-200">Migrate from 1.4.0 to 2.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-110-to-120">Migrate from 1.1.0 to 1.2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="migration-unity.html#migrate-from-101-to-110">Migrate from 1.0.1 to 1.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#release-notes-wikitude-sdk-professional-edition">Release Notes Wikitude SDK Professional Edition</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-980">Wikitude SDK 9.8.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-971">Wikitude SDK 9.7.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-970">Wikitude SDK 9.7.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-960">Wikitude SDK 9.6.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-950">Wikitude SDK 9.5.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-940">Wikitude SDK 9.4.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-931">Wikitude SDK 9.3.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-93">Wikitude SDK 9.3</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-92">Wikitude SDK 9.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-910">Wikitude SDK 9.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-900">Wikitude SDK 9.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-8100">Wikitude SDK 8.10.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-891">Wikitude SDK 8.9.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-89">Wikitude SDK 8.9</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-87">Wikitude SDK 8.7</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-86">Wikitude SDK 8.6</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-85">Wikitude SDK 8.5</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-84">Wikitude SDK 8.4</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#removed">Removed</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#known-issues">Known Issues</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-832">Wikitude SDK 8.3.2</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-830">Wikitude SDK 8.3.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-820">Wikitude SDK 8.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-810">Wikitude SDK 8.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-800">Wikitude SDK 8.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-721">Wikitude SDK 7.2.1</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-720">Wikitude SDK 7.2.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-710">Wikitude SDK 7.1.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#wikitude-sdk-700">Wikitude SDK 7.0.0</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="changelog.html#new">New</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#improved">Improved</a>
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#fixed">Fixed</a>
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-210-210">Unity Plugin 2.1.0-2.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-201-201">Unity Plugin 2.0.1-2.0.1</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-200-200">Unity Plugin 2.0.0-2.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-141-130">Unity Plugin 1.4.1-1.3.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-140-130">Unity Plugin 1.4.0-1.3.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-130-120">Unity Plugin 1.3.0-1.2.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-121-110">Unity Plugin 1.2.1-1.1.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-101-100">Unity Plugin 1.0.1-1.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-100-100">Unity Plugin 1.0.0-1.0.0</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="changelog.html#unity-plugin-100-100-beta">Unity Plugin 1.0.0-1.0.0 beta</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="license.html#license-terms">License Terms</a>
+            
+                
+    <ul>
+    
+        <li>
+            <a href="license.html#terms-of-service-for-wikitudes-software-development-kit">Terms of Service for Wikitude's Software Development Kit</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+        <li>
+            <a href="third-party-license.html#third-party-software-used">Third party software used</a>
+            
+                
+    <ul>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+            
+        </li>
+    
+</ul>
+
+        </nav>
+        
+        <nav id="links">
+            <ul>
+                
+            </ul>
+        </nav>
+        
+    </div>
+</div>
+        <div id="wrapper">
+            <div id="content">
+                <h1 id="release-notes-wikitude-sdk-professional-edition">Release Notes Wikitude SDK Professional Edition</h1>
+<div id="release-notes">
+
+<h2 id="wikitude-sdk-9-8-0">Wikitude SDK 9.8.0</h2>
+<p>Release Date: 2021-05-18</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Increased Unity version to 2020.3 LTS
+</li></ul></div>
+
+<p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed an issue where the Target Scale value for Object Targets was not normalized and had an incorrect transformation</li>
+<li>Fixed an issue where iOS build would fail in newer versions of Unity because of missing OpenGL ES symbols
+</li></ul></div>
+
+<p></p>
+<h2 id="wikitude-sdk-9-7-1">Wikitude SDK 9.7.1</h2>
+<p>Release Date: 2021-04-28</p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Issue where the point cloud of a wto was rendered incorrectly in Unity Editor (wrongly rotated)</li>
+</ul>
+<p></p></div><p></p>
+<h2 id="wikitude-sdk-9-7-0">Wikitude SDK 9.7.0</h2>
+<p>Release Date: 2021-04-06</p>
+<p></p>
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>If a point cloud preview for an object target is enabled, but at least one Scene View in the Unity Editor has Particle Systems disabled, there is a warning shown and an option to enable Particle Systems in all Scene Views</li>
+<li>Verified for Unity 2020.3 LTS
+</li></ul></div>
+
+<p></p>
+<p></p>
+<div class="release-notes-known-issue">
+<h3 id="known-issues">Known Issues</h3>
+<ul>
+<li>For Unity 2020.2 and higher: OpenGLES has to be enabled in the <code>Framework Dependencies</code> in the <code>libUnityiOSBridge.a</code> file's import settings (open the settings by clicking on the file located in <code>Assets &gt; Plugins &gt; iOS</code>) 
+</li></ul></div>
+
+<h2 id="wikitude-sdk-9-6-0">Wikitude SDK 9.6.0</h2>
+<p>Release Date: 2021-02-23</p>
+<p></p>
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>On some Android devices camera access is improved when Camera2 API is not available
+</li></ul></div>
+
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed a bug where a tracked object target's drawable was rotated by 180° on the y-axis.</li>
+<li>Camera frame rendering in Unity Editor Live Preview on Windows with <code>High DPI</code> settings</li>
+</ul>
+<p></p></div><p></p>
+<h2 id="wikitude-sdk-9-5-0">Wikitude SDK 9.5.0</h2>
+<p>Release Date: 2020-12-01</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Compatibility with Android 11</li>
+<li>Support for ARCore 1.19.0</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Faster initial recognition of Object Targets</li>
+<li>Faster overall tracking of Object Targets</li>
+<li>More accurate tracking of Object Targets in difficult situations</li>
+<li>Better alignment of augmentations for Image Targets</li>
+<li>Refinements for user experience for Unity Editor plugin</li>
+<li>The camera is no longer zoomed in on iOS devices with a 4:3 aspect ratio</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>The unitypackage no longer contains references to assets from external packages</li>
+<li>Target name for alignment initialization changes correctly when target collection is changed</li>
+</ul>
+<p></p></div><p></p>
+<p></p>
+<h2 id="wikitude-sdk-9-4-0">Wikitude SDK 9.4.0</h2>
+<p>Release Date: 2020-10-21</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Increased Unity version to 2019.4.10f1 LTS.</li>
+<li>Added support for <code>Linear Color Space</code>.
+</li></ul></div>
+
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Object Trackers initialize with fewer wrong poses</li>
+<li>The Live Preview component was extended with the option to use a video.
+</li></ul></div>
+
+<p></p>
+<p></p>
+<h2 id="wikitude-sdk-9-3-1">Wikitude SDK 9.3.1</h2>
+<p>Release Date: 2020-09-17</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Compatibility with iOS 14
+</li></ul></div>
+
+<div class="release-notes-known-issue">
+<h3 id="known-issues">Known Issues</h3>
+<ul>
+<li>When using Xcode 12 check out the additional manual steps to move the script files.
+</li></ul></div>
+
+<h2 id="wikitude-sdk-9-3">Wikitude SDK 9.3</h2>
+<p>Release Date: 2020-08-25</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Alignment Initializer can now be used for initializing Object Targets</li>
+<li>Compatibility for NatCorder
+</li></ul></div>
+
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Unity Editor: Improved Point Cloud preview inspector UI
+</li></ul></div>
+
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Unity Editor: Live Preview webcam wrong augmentation pose</li>
+<li>Unity Editor: Fixed a bug with static camera augmentation pose being wrong</li>
+<li>Unity Editor: Point Cloud preview is now properly destroyed upon unloading of a scene
+</li></ul></div>
+
+<div class="release-notes-removed">
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Support for iOS 11. iOS 12 is now the new minimum supported version</li>
+<li>Support for Android 5.0. Android 5.1 is now the new minimum supported version</li>
+<li>Deprecated TransformOverride functionality has been removed</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-known-issue">
+<h3 id="known-issues">Known Issues</h3>
+<ul>
+<li>The object tracker component visualization may break after changing a target collection in the inspector. Choosing another GameObject in the scene hierarchy and then choosing the object tracker again fixes the issue.
+</li></ul></div>
+
+<h2 id="wikitude-sdk-9-2">Wikitude SDK 9.2</h2>
+<p>Release Date: 2020-07-09</p>
+<p></p>
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Image Tracking now behaves more stable against short, fast movements</li>
+<li>Data communication with the Cloud Recognition version 2 service adapted, so that recognition accuracy is significantly improved (e.g. greater distance)</li>
+<li>Update OpenSSL to version 1.1.1</li>
+<li>Unity Editor handling of point clouds improved</li>
+<li>Live Preview front camera improvements for Unity Editor</li>
+<li>iOS and Android safe areas are handled better for Unity samples</li>
+<li>Improved instant tracking initialization with SMART</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed Cloud Recognition issue where accuracy was worse when HD or FullHD resolutions being were used
+</li></ul></div>
+
+<p></p>
+<p></p>
+<h2 id="wikitude-sdk-9-1-0">Wikitude SDK 9.1.0</h2>
+<p>Release Date: 2020-05-19</p>
+<p></p>
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Tracking is not lost when zooming camera</li>
+<li>Improvements to accuracy for Object Recognition</li>
+<li>Improved handling of first recognition for objects</li>
+<li>Improved alignment of augmentations for image tracking when rotating target</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed unnecessary SDK calls in LivePreview improving runtime</li>
+<li>Fixed issue with the <code>WTC Editor</code> where saving certain changes to a target was not working</li>
+<li>Fixed alignment of the augmentations for the firetruck in object tracking samples
+</li></ul></div>
+
+<p></p>
+<p></p>
+<h2 id="wikitude-sdk-9-0-0">Wikitude SDK 9.0.0</h2>
+<p>Release Date: 2020-03-31</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Improved image tracking performance and stability</li>
+<li>Added point cloud visualization for object targets in the Unity Editor</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed an issue where the target pattern would not be applied correctly in some cases</li>
+<li>Fixed an issue where Static Images would not work correctly in the Live Preview</li>
+<li>Fixed a sample issue where ARCore was incorrectly required for Instant Tracking even on devices that don't support it</li>
+</ul>
+<p></p></div><p></p>
+<p></p>
+<h2 id="wikitude-sdk-8-10-0">Wikitude SDK 8.10.0</h2>
+<p>Release Date: 2019-12-10</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Changed minimum Android SDK version to 21 (Android 5.0)</li>
+<li>Changed minimum iOS version to 11.0</li>
+<li>Fixed compatibility issues with Unity 2019.3</li>
+<li>Fixes issue where camera frame rendering was very slow on some MacBook devices</li>
+</ul>
+<p></p></div><p></p>
+<p></p>
+<div class="release-notes-known-issue">
+<h3 id="known-issues">Known Issues</h3>
+<ul>
+<li>OpenGL ES is only supported at the moment in version 2018.4 LTS
+</li></ul></div>
+
+<h2 id="wikitude-sdk-8-9-1">Wikitude SDK 8.9.1</h2>
+<p>Release Date: 2019-09-30</p>
+<p></p>
+<p></p>
+<h2 id="wikitude-sdk-8-9">Wikitude SDK 8.9</h2>
+<p>Release Date: 2019-09-24</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Implemented support for iOS 13</li>
+<li>Implemented support for Android 10</li>
+<li>Increased Unity version to 2018.4 LTS.</li>
+<li>ARCore has been updated to version 1.5.
+</li></ul></div>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<h2 id="wikitude-sdk-8-7">Wikitude SDK 8.7</h2>
+<p>Release Date: 2019-08-13</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>External cameras can now be used in UWP devices.
+</li></ul></div>
+
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Camera frame handling is now faster for all platforms.</li>
+<li>Range for detecting an image target using an ImageTracker has been significantly improved.
+</li></ul></div>
+
+<p></p>
+<p></p>
+<p></p>
+<h2 id="wikitude-sdk-8-6">Wikitude SDK 8.6</h2>
+<p>Release Date: 2019-07-11</p>
+<p></p>
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Changed plugin lifecycle behaviour. A call to pause is now always preceded by a call to resume
+</li></ul></div>
+
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed an issue where Advanced Custom Camera didn't render the camera correctly in the Unity Editor if the aspect ratio was less than 1.
+</li></ul></div>
+
+<div class="release-notes-removed">
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Support for <code>wto 7.0</code> file format for Object Targets</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-known-issue">
+<h3 id="known-issues">Known Issues</h3>
+<ul>
+<li>Unity Editor Live Preview does not support Windows Display Scaling over 100% in Unity versions 2018.2 or newer
+</li></ul></div>
+
+<div class="platform-selector" data-platform-start="flutter"></div>
+
+<h2 id="wikitude-sdk-8-5">Wikitude SDK 8.5</h2>
+<p>Release Date: 2019-05-23</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Image Recognition engine now can work with jpg, png and zip files as Target Collection resource</li>
+<li>Image Recognition engine accepts png's with alpha channel as target images and respects transparent areas</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Image Recognition engine detects images from a larger distance</li>
+<li>Image Recognition engine detects duplicate targets more reliably</li>
+</ul>
+<p></p></div><p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed an issue where the <code>extended range</code> option was ignored for Image Trackers, resulting in shorter recognition distance</li>
+<li>Fixed an issue where the property <code>physicalTargetHeight</code> was not set when using cloud recognition.</li>
+<li>Fixed an issue where the application could crash when locking an UWP device while <code>Run In Background</code> player setting is true.</li>
+<li>Fixed an issue where the application could crash when starting and immediately stopping the SDK on UWP</li>
+<li>Fixed an issue where the application could crash when querying flash information on a camera that didn't have flash on Android</li>
+</ul>
+<p></p></div><p></p>
+<p></p>
+<div class="platform-selector" data-platform-start="hololens"></div>
+
+<h2 id="wikitude-sdk-8-4">Wikitude SDK 8.4</h2>
+<p>Release Date: 2019-04-09</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>New minimum version of Unity required: Unity 2017.4 LTS - see <a href="https://www.wikitude.com/blog-2019-sdk-clean-up/">blog post for details</a> </li>
+<li>Significant improvements to plane detection quality and speed. Plane Detection is leaving experimental status.</li>
+<li>Introduced a new API to check if the current device supports all hardware requirements to run the AR experience.
+</li></ul></div>
+
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Initial recognition for Object Targets is more accurate and stable</li>
+<li>Improved recognition for image targets in difficult backgrounds
+</li></ul></div>
+
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed an issue with crosshair rendering in Instant Tracking examples
+</li></ul></div><div class="release-notes-removed">
+
+
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Support for iPhone 4, iPhone 4s and iPhone 5: Minimum requirement is now iPhone 5s - see <a href="https://www.wikitude.com/blog-2019-sdk-clean-up/">blog post for details</a> </li>
+<li>Support for Titanium development framework - see <a href="https://www.wikitude.com/blog-2019-sdk-clean-up/">blog post for details</a> 
+</li></ul></div>
+
+<p></p>
+<h2 id="wikitude-sdk-8-3-2">Wikitude SDK 8.3.2</h2>
+<p>Release Date: 2019-03-11</p>
+<p></p>
+<h2 id="wikitude-sdk-8-3-0">Wikitude SDK 8.3.0</h2>
+<p>Release Date: 2019-02-26</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Full compatibility with Unity 2018.3</li>
+<li>Release of Native API for UWP platform</li>
+<li>Support for Vuzix M300 for JavaScript API</li>
+<li>General upgrade of computer vision engine increasing reliability and speed for Image, Object and Instant Trackers
+</li></ul></div>
+
+<p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixes camera rendering issues with OpenGL ES 2 and ARKit</li>
+<li>Fixes issue where instant tracking with ARCore would sometimes fail</li>
+<li>Fixes issue where image tracking would not work if an instant tracker with ARKit was previously running</li>
+<li>Fixes issue where the camera on iOS would start in fixed focus mode, instead of continuous focus mode</li>
+<li>Fixes camera rendering on UWP devices when an additional Unity RenderTexture camera was present in the scene</li>
+<li>Fixes camera rendering on newer iPad devices when using SMART</li>
+<li>Fixes potential crash caused by ongoing network connections while destroying the SDK</li>
+<li>Fixes rare crash when extended object tracking is frequently stopped and restarted
+</li></ul></div>
+
+<h2 id="wikitude-sdk-8-2-0">Wikitude SDK 8.2.0</h2>
+<p>Release Date: 2018-11-10</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Experimental support and compatibility for Unity 2018.3</li>
+<li>New CameraToHorizonAngle property for LivePreview that defines the ground plane orientation</li>
+<li>Beta Release of Native API for UWP platform
+</li></ul></div>
+
+<p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixes issue where setting the Trackable.TargetPattern property at runtime did not work properly</li>
+<li>Fixes issue where setting the extended targets for <code>ImageTrackable</code> and <code>ObjectTrackable</code> at runtime did not work properly</li>
+<li>Fixes an occasional crash for certain image targets when energy efficient tracking was enabled
+</li></ul></div><div class="platform-selector" data-platform-start="uwpnative"></div>
+
+
+<h2 id="wikitude-sdk-8-1-0">Wikitude SDK 8.1.0</h2>
+<p>Release Date: 2018-09-11</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Plane Detection feature to recognize planar surfaces</li>
+<li>Support and compatibility for iOS 12</li>
+<li>Support and compatibility for Android 9.0</li>
+<li>Support and compatibility for Unity 2018.2</li>
+<li>API to explicitly set efficiency mode for trackers for fast processing</li>
+<li>Mandatory Group ID parameter for cloud recognition
+</li></ul></div>
+
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Increased stability when tracking objects and scenes</li>
+<li>Increased recognition accuracy for multiple objects in object target collection</li>
+<li>Increased stability for Instant Tracking for rotational movements</li>
+<li>General improvements to Instant Tracking for more accurate tracking and representation</li>
+<li>Camera2 is now used by default on all devices with Android 5.1 or higher</li>
+<li>ImageTracker.MaximumNumberOfConcurrentTrackableTargets can now be publicly set</li>
+<li>Increased stability of the WTC Editor
+</li></ul></div>
+
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixes issue where recognising an image was not possible when the device was close to the image</li>
+<li>Fixes crash with extended object tracking on lower end devices</li>
+<li>Fixes issue where the WTC Editor in Windows wouldn't work if the project path contained spaces</li>
+<li>Fixes issue where augmentations were not rendered correctly in landscape left when using the front camera</li>
+<li>Fixes issue where the SDK was not stopped and the camera was not released when the WikitudeCamera was disabled</li>
+<li>Fixes issue where changing the InstantTracker.TrackingPlaneOrientation property didn't have any effect
+</li></ul></div>
+
+<h2 id="wikitude-sdk-8-0-0">Wikitude SDK 8.0.0</h2>
+<p>Release Date: 05.07.2018</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Ability to save Instant Tracking session as Instant Targets</li>
+<li>Ability to load Instant Targets</li>
+<li>Major update to the engine powering Object Tracker resulting in better recognition accuracy and better tracking stability</li>
+<li>Introduction of new <code>wto</code> format version</li>
+<li>New method to generate Object Targets using images instead of videos</li>
+<li>New camera APIs to control exposure setting and focus area</li>
+<li>Unity Editor now supports accessing camera information from WebCam or Unity Remote app to preview AR experience directly in Unity Editor</li>
+<li>Support for Android ARM64 builds
+</li></ul></div>
+
+<p></p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixes an issue on Android when multithreaded rendering is enabled</li>
+<li>Fixes an video rendering issue in case the Wikitude SDK was rendering the camera stream
+</li></ul></div>
+
+<h2 id="wikitude-sdk-7-2-1">Wikitude SDK 7.2.1</h2>
+<p>Release Date: 21.02.2018</p>
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixes a bug where trial license did not allow to use Instant Tracking</li>
+<li>Fixes a potential deadlock for cloud recognition that occurred in rare cases
+</li></ul></div>
+
+<h2 id="wikitude-sdk-7-2-0">Wikitude SDK 7.2.0</h2>
+<p>Release Date: 05.02.2018</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>SMART - Wikitude's integration of ARKit and ARCore
+</li></ul></div>
+
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Added option to disable camera rendering</li>
+<li>Added option to make the WikitudeCamera static
+</li></ul></div>
+
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixes issues when building for Android using IL2CPP
+</li></ul></div>
+
+<h2 id="wikitude-sdk-7-1-0">Wikitude SDK 7.1.0</h2>
+<p>Release Date: 19.09.2017</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>New APIs to get the point cloud for InstantTracking
+</li></ul></div>
+
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Improved OpenGL ES resource handling
+</li></ul></div>
+
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixes an object tracker issue where the <code>onTargetsLoaded</code> callback was called before all object targets were extracted</li>
+<li>Fixes an issue where <code>Plugin::pause</code> was not called in case it was unregistered from the SDK</li>
+<li>Fixes an issue where the SDK could crash in case a new tracker was created while another one was already tracking</li>
+<li>Fixes an issue where loading .wto files could have happened on the main thread</li>
+<li>Fixes an issue where the SDK could have crashed in case a target collection resource was released</li>
+<li>Fixes an issue where the SDK could have crashed in case a cloud recognition service was released</li>
+<li>Fixes an issue where the camera frames would not be rendered when using Metal with Unity 2017.1</li>
+<li>Fixes an issue where the WTC Editor would not work properly on Unity 2017.1</li>
+<li>Fixes an occasional camera stuttering and frame sync issues when using Metal</li>
+<li>Fixes an issue where the auto frame rate setting would not work properly on iOS</li>
+<li>Fixes an issue where cloud recognition would not call OnRecognitionResponse when metadata was missing on iOS or Android
+</li></ul></div>
+
+<h2 id="wikitude-sdk-7-0-0">Wikitude SDK 7.0.0</h2>
+<p>Release Date: 13.07.2017</p>
+<div class="release-notes-new">
+<h3 id="new">New</h3>
+<ul>
+<li>Object Recognition and Tracking</li>
+<li>Support for multiple Image Targets</li>
+<li>New hit-testing API for SLAM engine</li>
+<li>Option for Extended Range for Image Recognition</li>
+<li>Option for InstantTracker to choose initial plane orientation</li>
+<li>Support for Metal Graphics API
+</li></ul></div>
+
+<div class="release-notes-improved">
+<h3 id="improved">Improved</h3>
+<ul>
+<li>Updated SLAM engine improves performance and accuracy for InstantTracker and Extended Tracking
+</li></ul></div>
+
+<div class="release-notes-fixed">
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Issue where TargetRectangleInFrame returned the wrong position and size with HD frames</li>
+<li>OpenGL ES 3 rendering issues
+</li></ul></div>
+
+<h2 id="unity-plugin-2-1-0-2-1-0">Unity Plugin 2.1.0-2.1.0</h2>
+<p>Release Date: 28.03.2017</p>
+<h4 id="new">New</h4>
+<ul>
+<li>Support for OpenGL ES 3.x</li>
+<li>New supported FrameColorSpace YV12 for input plugins</li>
+<li>New plugin registration error callback that contains more information why an input plugin could not be registered</li>
+<li>New Frame methods <code>hasStrides()</code> and <code>getFrameStrides()</code> to get stride information of frames provided by plugins</li>
+</ul>
+<h4 id="improved">Improved</h4>
+<ul>
+<li>Trial licenses now support instant tracking</li>
+</ul>
+<h2 id="unity-plugin-2-0-1-2-0-1">Unity Plugin 2.0.1-2.0.1</h2>
+<p>Release Date: 15.02.2017</p>
+<h4 id="fixed">Fixed</h4>
+<ul>
+<li>Fixed a watermark rendering issue that occurred on certain Android devices</li>
+<li>Fixed an issue where complex json metadata was not handled correctly</li>
+</ul>
+<h2 id="unity-plugin-2-0-0-2-0-0">Unity Plugin 2.0.0-2.0.0</h2>
+<p>Release Date: 25.01.2017</p>
+<h4 id="new">New</h4>
+<ul>
+<li>The new instant tracking feature allows users to place augmentations without any markers in any surrounding. Instant tracking uses Wikitudes own SLAM-based 3D engine.</li>
+<li>Added advanced camera settings like HD and 60 fps camera rendering and a manual focus control</li>
+<li>Unified computer vision related class names</li>
+<li>Added support for x86 on Android</li>
+</ul>
+<h4 id="improved">Improved</h4>
+<ul>
+<li>Updated target collection format (.wtc) which improves the robustness and performance of 2D image recognition.</li>
+<li>Extended tracking improved significant using the new SLAM technology </li>
+<li>Custom camera example now shows how to sync 2d tracking and camera frame rendering</li>
+</ul>
+<h4 id="fixed">Fixed</h4>
+<ul>
+<li>Fix inverted camera view on some Android devices</li>
+</ul>
+<h2 id="unity-plugin-1-4-1-1-3-0">Unity Plugin 1.4.1-1.3.0</h2>
+<p>Release Date: 24.11.2016<br>
+Unity Plugin: 1.3.0<br>
+Native API: 1.4.1</p>
+<h4 id="new">New</h4>
+<ul>
+<li>Includes Native API version 1.4.1 (see separate for detailed changes <a href="http://www.wikitude.com/external/doc/documentation/latest/iosnative/changelog.html">iOS</a>, <a href="http://www.wikitude.com/external/doc/documentation/latest/androidnative/changelog.html">Android</a>)</li>
+</ul>
+<h2 id="unity-plugin-1-4-0-1-3-0">Unity Plugin 1.4.0-1.3.0</h2>
+<p>Release Date: 13.09.2016<br>
+Unity Plugin: 1.3.0<br>
+Native API: 1.4.0</p>
+<h4 id="new">New</h4>
+<ul>
+<li>Plugins enable additional processing to be done on the camera feed directly in Unity, or in custom native plugins</li>
+<li>Input Plugins allow developers to use the Wikitude SDK with an external camera feed</li>
+<li>Includes Native API version 1.4.0 (see separate for detailed changes <a href="http://www.wikitude.com/external/doc/documentation/latest/iosnative/changelog.html">iOS</a>, <a href="http://www.wikitude.com/external/doc/documentation/latest/androidnative/changelog.html">Android</a>)</li>
+</ul>
+<h4 id="improved">Improved</h4>
+<ul>
+<li>Cloud Tracker now includes an option to change the server region</li>
+</ul>
+<h4 id="fixed">Fixed</h4>
+<ul>
+<li>Fixed bug where extended tracking was not properly enabled</li>
+<li>Fixed bug where augmentations were not placed properly when using the front facing camera</li>
+</ul>
+<h2 id="unity-plugin-1-3-0-1-2-0">Unity Plugin 1.3.0-1.2.0</h2>
+<p>Release Date: 14.07.2016<br>
+Unity Plugin: 1.2.0<br>
+Native API: 1.3.0</p>
+<h4 id="new">New</h4>
+<ul>
+<li>WTC Editor inside Unity</li>
+<li>Includes Native API version 1.3.0 (see separate for detailed changes <a href="http://www.wikitude.com/external/doc/documentation/latest/iosnative/changelog.html">iOS</a>, <a href="http://www.wikitude.com/external/doc/documentation/latest/androidnative/changelog.html">Android</a>)</li>
+</ul>
+<h4 id="improved">Improved</h4>
+<ul>
+<li>Trackable inspector can now view local wtc file contents and can preview targets inside the 3D view to make placing augmentations easier</li>
+<li>Trackable transform is no longer changed during tracking</li>
+<li>Camera prefab has been simplified</li>
+</ul>
+<h4 id="fixed">Fixed</h4>
+<ul>
+<li>Fixed bug on Windows machines where choosing a wtc file not placed in the StreamingAssets folder directly would cause the app to not track anymore</li>
+<li>Fixed issue with loading pre-recorded .wtm files</li>
+<li>Fixed issue with some shaders not working correctly</li>
+<li>Fixed shadow rendering on Android</li>
+<li>Fixed missing camera feed on Android when the Standard shader was not present in the project</li>
+<li>Fixed errors when no wtc files were present in the project</li>
+</ul>
+<h2 id="unity-plugin-1-2-1-1-1-0">Unity Plugin 1.2.1-1.1.0</h2>
+<p>Release Date: 21.03.2016</p>
+<h4 id="new">New</h4>
+<ul>
+<li>3D Tracking and 3D Map Recording</li>
+<li>Extended Tracking quality feedback</li>
+<li>Camera Controls API</li>
+<li>Extended examples illustrating all the available API</li>
+<li>Unity editor events for all callbacks</li>
+<li>Ability to create and destroy trackers at runtime</li>
+</ul>
+<h4 id="fixed">Fixed</h4>
+<ul>
+<li>Crashes when reloading scenes</li>
+</ul>
+<h2 id="unity-plugin-1-0-1-1-0-0">Unity Plugin 1.0.1-1.0.0</h2>
+<p>Release Date: 12.11.2015</p>
+<h4 id="improved">Improved</h4>
+<ul>
+<li>Android based app packages can now be exported to Android Studio</li>
+<li>64-bit applications for Android now choose the correct library version</li>
+</ul>
+<h2 id="unity-plugin-1-0-0-1-0-0">Unity Plugin 1.0.0-1.0.0</h2>
+<p>Release Date: 27.08.2015</p>
+<h4 id="new">New</h4>
+<ul>
+<li>Initial public release of Unity Plugin</li>
+<li>Added Android as supported platform</li>
+<li>Fixed limited interface orientations</li>
+</ul>
+<h2 id="unity-plugin-1-0-0-1-0-0-beta">Unity Plugin 1.0.0-1.0.0 beta</h2>
+<p>Release Date: 30.07.2015</p>
+<h4 id="new">New</h4>
+<ul>
+<li>Initial Public Beta Release of Unity Plugin</li>
+</ul>
+<p></p></div><p></p>
+
+                <footer id="footer">
+                    © 2012-2019 <a href="https://www.wikitude.com">Wikitude GmbH</a> · <a href="https://www.wikitude.com/imprint">Imprint</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            var storageKey = "unity" + "9.8.0";
+            function stateChanged(nodes, nodesJson) {
+                localStorage.setItem(storageKey, JSON.stringify(nodesJson));
+            }
+
+            function getData() {
+                var data = localStorage.getItem(storageKey);
+                if (data) return JSON.parse(data);
+            }
+
+            var easytree = $("#toc").easytree({
+                data: getData(),
+                stateChanged: stateChanged
+            });
+
+            $('.easytree-exp-e .easytree-title').each(function () {
+                let openItem = $(this).parent();
+                var openItemId = openItem.attr('id');
+                var activeChildItem = openItem.parent().find('ul li .easytree-active');
+
+                if (!activeChildItem.length) {
+                    easytree.toggleNode(openItemId);
+                }
+            });
+
+            var activeItem = $('.easytree-active.easytree-exp-c .easytree-title');
+
+            if (activeItem) {
+                var activeItemId = activeItem.closest('.easytree-active').attr('id');
+                easytree.toggleNode(activeItemId);
+            }
+            
+        });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // Every image referenced from a Markdown document
+        $("#content img").each(function() {
+            // Let's put a caption if there is one
+            if($(this).attr("alt"))
+                $(this).wrap('<figure class="image"></figure>')
+                    .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
+            });
+
+        //
+        document.getElementById("documentationSelect").onchange = function() {
+            var selectedOption = this.value;
+            var targetLink ="";
+            //console.log(selectedOption);
+            if(selectedOption !== ""){
+                if (selectedOption.startsWith("external"))
+                {
+                    targetLink = selectedOption.substring(9);
+                }
+                else
+                {
+                    targetLink = "https://www.wikitude.com/external/doc/documentation/latest/" + selectedOption;
+                }
+                
+                window.top.location.href = targetLink; 
+            }
+        };
+    });
+    </script>
+
+
+    <script>
+    var lightbox = new Lightbox();
+    lightbox.load();
+    hljs.initHighlightingOnLoad();
+  </script>
+     <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNSZJ73"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+</body></html>
